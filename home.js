@@ -5,11 +5,9 @@ document.getElementById('continue-btn').addEventListener('click', function (e) {
     const pinInput = document.getElementById('pin-input').value;
     let totalMoney = parseFloat(document.getElementById('total-amount').innerText);
     console.log(totalMoney);
-    if (pinInput === '4321') {
+    
         document.getElementById('total-amount').innerText = totalMoney + moneyInput;
 
-    } else {
-        alert('yor pin wrong')
-    }
+  
 
 });
