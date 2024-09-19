@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style></style>
+  </head>
+  <body>
+      <h1>This is home page</h1>
+      <main class="flex">
+
+   
+
+ <div class="mockup-phone border-primary">
+  <div class="camera"></div>
+  <div class="display">
+    <div class="artboard artboard-demo phone-3">
+        <h1 id="total-amount" class="text-5xl">1500</h1>
+          <div class="divider divider-neutral"></div>
+
+          <div><button id="cash-in-btn" class="btn">Cash in</button>
+          <button id="cash-out-btn" class="btn">Cash out</button></div>
+
+        <!-- form start -->
+         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"></div>
+      <form id="cash-in-form" class="w-12/9">
+          <div class="divider divider-neutral"></div>
+
+
+        <div>
+          <label class="label">
+            <span class="label-text">Your Money</span>
+          </label>
+          <input id="money-input" type="text" placeholder="Your Money" class="input input-bordered" required autocomplete="off"/>
+         
+        </div>
+
+        
+        <div>
+          <label class="label">
+            <span class="label-text">Your pin number</span>
+          </label>
+          <input id="pin-input" type="password" placeholder="Your pin number" class="input input-bordered" required />
+          <label class="label">
+            <a href="#" class="label-text-alt link link-hover">Forgot pin?</a>
+          </label>
+        </div>
+        <div class="form-control mt-6">
+          <button id="continue-btn" class="btn btn-primary">Add Money</button>
+        </div>
+      </form>
+
+        <form id="cash-out-form" class="w-12/9 hidden">
+
+        
+        <div class="divider divider-neutral"></div>
+
+
+        <div>
+          <label class="label">
+            <span class="label-text">Your Money</span>
+          </label>
+          <input id="money-out" type="text" placeholder="Your Money" class="input input-bordered" required autocomplete="off"/>
+         
+        </div>
+
+        
+        <div>
+          <label class="label">
+            <span class="label-text">Your pin number</span>
+          </label>
+          <input id="pin-out" type="password" placeholder="Your pin number" class="input input-bordered" required />
+          <label class="label">
+            <a href="#" class="label-text-alt link link-hover">Forgot pin?</a>
+          </label>
+        </div>
+        <div class="form-control mt-6">
+          <button id="out-btn" class="btn btn-primary">Cash-Out</button>
+        </div>
+      </form>
+    </div>
+        <!-- form end -->
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+    </main>
+    
+  
+<script src="home.js"></script>
+<script src="out.js"></script>
+<script src="common.js"></script>
+  </body>
+</html>
